@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/owl.carousel.css">
+   <link rel="stylesheet" href="css/owl.theme.default.css">
+   <link rel="stylesheet" href="css/style.css">
+   <script src="js/jquery-3.7.1.js"></script>
+</head>
+
+<body>
+
+   <div class="app container py-3">
+      <div class="d-flex justify-content-between flex-wrap gap-2 mb-3">
+         <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#chat_offcanvas">
+            <i class="fas fa-bars"></i> &nbsp; Open Chat
+         </button>
+         <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+               <img src="img/flag_en.png" class="align-baseline" alt="">
+               English
+            </button>
+            <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">
+                  <img src="img/flag_de.png" class="align-baseline" alt="">
+                  German
+               </a>
+               <a class="dropdown-item" href="#">
+                  <img src="img/flag_es.png" class="align-baseline" alt="">
+                  Spanish
+               </a>
+               <a class="dropdown-item" href="#">
+                  <img src="img/flag_fr.png" class="align-baseline" alt="">
+                  French
+               </a>
+            </div>
+         </div>
+         <a href="#" class="btn btn-danger">Login / Register</a>
+      </div>
+      <!-- live sports -->
+      <h1 class="text-center fw-bold mb-4">
+         <a href="index.html" class="text-warning">
+            <span class="text-primary">Live</span>
+            <span class="text-danger">Sports</span>
+         </a>
+      </h1>
+      <div class="owl-carousel owl-theme mb-3" id="sports_carousel">
+         <a href="#" class="my-sports-item active">
+            <img src="img/football.png" alt="">
+            <span class="sport-name">Football</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/basketball.png" alt="">
+            <span class="sport-name">Basketball</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/motorsport.png" alt="">
+            <span class="sport-name">MotorSport</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/hockey.png" alt="">
+            <span class="sport-name">Hockey</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/rugby.png" alt="">
+            <span class="sport-name">Rugby</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/nfl.png" alt="">
+            <span class="sport-name">NFL</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/ufc.png" alt="">
+            <span class="sport-name">UFC</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/wresling.png" alt="">
+            <span class="sport-name">Wresling</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/handball.png" alt="">
+            <span class="sport-name">Handball</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/volleyball.png" alt="">
+            <span class="sport-name">Volleyball</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/darts.png" alt="">
+            <span class="sport-name">Darts</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/tennis.png" alt="">
+            <span class="sport-name">Tennis</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/boxing.png" alt="">
+            <span class="sport-name">Boxing</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/cricket.png" alt="">
+            <span class="sport-name">Cricket</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/baseball.png" alt="">
+            <span class="sport-name">Baseball</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/snooker.png" alt="">
+            <span class="sport-name">Snooker</span>
+         </a>
+         <a href="#" class="my-sports-item">
+            <img src="img/othersports.svg" alt="" class="me-2">
+            <span class="sport-name">Others</span>
+         </a>
+      </div>
+
+
+      <!--  -->
+      <div class="row justify-content-between align-items-center mb-3 gx-0 gy-3">
+         <div class="col-12 col-md-6 col-lg-4">
+            <div class="">
+               <h3 class="mb-0">Saturday 25 November 2023</h3>
+            </div>
+         </div>
+         <div class="col-12 col-md-6 col-lg-4">
+            <div class="d-flex gap-3 justify-content-md-end justify-content-lg-center">
+               <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="list_check" checked>
+                  <label class="form-check-label" for="list_check">
+                     List
+                  </label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="league_check">
+                  <label class="form-check-label" for="league_check">
+                     League
+                  </label>
+               </div>
+               <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="intern_list_check">
+                  <label class="form-check-label" for="intern_list_check">
+                     Intern List
+                  </label>
+               </div>
+            </div>
+         </div>
+         <div class="col-12 col-lg-4">
+            <div class="">
+               <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search matches...">
+                  <button class="btn btn-warning" type="button">
+                     <i class="fas fa-search"></i>
+                  </button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--  -->
+      <div class="mb-3">
+         <button class="btn btn-primary ">All Matches</button>
+         <button class="btn btn-primary">Upcoming</button>
+         <button class="btn btn-primary">Live</button>
+      </div>
+      <!--  -->
+      <div
+         class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mb-4 justify-content-center justify-content-md-between align-items-center g-3">
+         <div class="col order-0">
+            <div class="d-flex align-items-center">
+               <span class="me-2" style="white-space: nowrap;">Clock: 12:19:17</span>
+               <select class="form-select" aria-label="Default select example">
+                  <option value="1">GMT +0</option>
+                  <option value="2">GMT +1</option>
+                  <option value="3">GMT +2</option>
+                  <option value="3">GMT +3</option>
+                  <option value="3">GMT +4</option>
+                  <option value="3">GMT +5</option>
+               </select>
+            </div>
+         </div>
+         <div class="col order-last order-md-1">
+            <div class="d-flex justify-content-center align-items-center gap-2">
+               <span class="text-primary fw-bold">Live : 2</span>
+               <span class="vertical-rule"></span>
+               <span class="text-danger fw-bold">Total : 73</span>
+            </div>
+         </div>
+         <div class="col order-2">
+            <div id="date-carousel">
+               <button class="controls prev">
+                  <i class="fas fa-angle-double-left"></i>
+               </button>
+               <div class="my-date-item">
+                  <span>FR</span>
+                  <span>25</span>
+               </div>
+               <div class="my-date-item active">
+                  <span>SR</span>
+                  <span>26</span>
+               </div>
+               <div class="my-date-item">
+                  <span>SU</span>
+                  <span>27</span>
+               </div>
+               <button class="controls next">
+                  <i class="fas fa-angle-double-right"></i>
+               </button>
+            </div>
+         </div>
+      </div>
+      <!-- cards -->
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 mb-4 mb-sm-5 g-4">
+         <div class="col">
+            <div class="card match-card rounded-5">
+               <div class="card-body">
+                  <img class="sport-pic" src="img/hockey.png" alt="">
+                  <div class="row gx-0 align-items-center">
+                     <div class="col-5">
+                        <div class="d-flex flex-column align-items-center">
+                           <img class="team-pic" src="https://1.ivesoccer.sx/teams/seattle-kraken.png" alt="">
+                           <span class="team-name">Los Angeles Clippers</span>
+                        </div>
+                     </div>
+                     <div class="col-2">
+                        <div class="d-flex flex-column align-items-center">
+                           <span class="badge bg-primary fs-6">VS</span>
+                        </div>
+                     </div>
+                     <div class="col-5">
+                        <div class="d-flex flex-column align-items-center">
+                           <img class="team-pic" src="https://1.ivesoccer.sx/teams/vancouver-canucks.png" alt="">
+                           <span class="team-name">Los Angeles Clippers</span>
+                        </div>
+                     </div>
+                  </div>
+                  <p class="text-center mb-2">
+                     <span class="fw-bold text-danger">NHL</span>
+                  </p>
+                  <div class="text-center">
+                     <div class="mb-2">
+                        <span class="fw-bold fs-5">Time : </span>
+                        <span class="fs-5">8:00 GMT +2</span>
+                     </div>
+                     <div class="mb-1">
+                        <a href="strem.html" class="badge bg-primary text-decoration-none fs-6">HD+</a>
+                        <span class="badge bg-danger fs-6 cursor-pointer" data-bs-toggle="modal" data-bs-target="#linksModal">LIVE</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card match-card rounded-5">
+               <div class="card-body">
+                  <img class="sport-pic" src="img/hockey.png" alt="">
+                  <div class="row gx-0 align-items-center">
+                     <div class="col-5">
+                        <div class="d-flex flex-column align-items-center">
+                           <img class="team-pic" src="https://1.ivesoccer.sx/teams/seattle-kraken.png" alt="">
+                           <span class="team-name">Los Angeles Clippers</span>
+                        </div>
+                     </div>
+                     <div class="col-2">
+                        <div class="d-flex flex-column align-items-center">
+                           <span class="badge bg-primary fs-6">VS</span>
+                        </div>
+                     </div>
+                     <div class="col-5">
+                        <div class="d-flex flex-column align-items-center">
+                           <img class="team-pic" src="https://1.ivesoccer.sx/teams/vancouver-canucks.png" alt="">
+                           <span class="team-name">Los Angeles Clippers</span>
+                        </div>
+                     </div>
+                  </div>
+                  <p class="text-center mb-2">
+                     <span class="fw-bold text-danger">Australia Women W-League</span>
+                  </p>
+                  <div class="text-center">
+                     <div class="mb-2">
+                        <span class="fw-bold fs-5">Time : </span>
+                        <span class="fs-5">8:00 GMT +2</span>
+                     </div>
+                     <div class="mb-1">
+                        <a href="strem.html" class="badge bg-primary text-decoration-none fs-6">HD+</a>
+                        <span class="badge bg-dark fs-6 cursor-pointer" data-bs-toggle="modal" data-bs-target="#linksModal">Watch</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col">
+            <div class="card match-card rounded-5">
+               <div class="card-body">
+                  <img class="sport-pic" src="img/hockey.png" alt="">
+                  <div class="d-flex justify-content-around align-items-center m-1">
+                     <span class="team-name">Grand Prix Valencia</span>
+                  </div>
+                  <p class="text-center mb-2">
+                     <span class="fw-bold text-danger">Australia Women W-League</span>
+                  </p>
+                  <div class="text-center">
+                     <div class="mb-2">
+                        <span class="fw-bold fs-5">Time : </span>
+                        <span class="fs-5">8:00 GMT +2</span>
+                     </div>
+                     <div class="mb-1">
+                        <a href="strem.html" class="badge bg-primary text-decoration-none fs-6">HD+</a>
+                        <span class="badge bg-dark fs-6 cursor-pointer" data-bs-toggle="modal" data-bs-target="#linksModal">Watch</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+
+      <!--  -->
+      <footer>
+         <div id="all_team_pics">
+            <a href="#"><img src="img/uefa-champions-league.png" alt=""></a>
+            <a href="#"><img src="img/uefa-europa-league.png" alt=""></a>
+            <a href="#"><img src="img/uefa-conference-league.png" alt=""></a>
+            <a href="#"><img src="img/premier-league.png" alt=""></a>
+            <a href="#"><img src="img/bundesliga.png" alt="" class=""></a>
+            <a href="#"><img src="img/serie-a.png" alt="" class=""></a>
+            <a href="#"><img src="img/spanish-primera-division.png" alt="" class=""></a>
+            <a href="#"><img src="img/argentina-superliga.png" alt="" class=""></a>
+            <a href="#"><img src="img/france-ligue-1.png" alt="" class=""></a>
+            <a href="#"><img src="img/eredivisie.png" alt="" class=""></a>
+            <a href="#"><img src="img/australian-a-league.png" alt="" class=""></a>
+            <a href="#"><img src="img/mexico-liga-mx.png" alt="" class=""></a>
+            <a href="#"><img src="img/mls.png" alt="" class=""></a>
+            <a href="#"><img src="img/rugby-top-14.png" alt="" class=""></a>
+            <a href="#"><img src="img/greece-super-league.png" alt="" class=""></a>
+            <a href="#"><img src="img/portuguese-primeira-liga.png" alt="" class=""></a>
+            <a href="#"><img src="img/bundesliga-2.png" alt="" class=""></a>
+         </div>
+         <div class="text-center">
+            <a href="index.html">
+               <img class="logo" src="img/livesoccer.png" alt="">
+            </a>
+            <p>
+               Live sports streaming - Livesoccer.sx
+               <br>
+               Our website (Livesoccer.sx) is representing various live sport streams, sport videos, livesports for
+               free.
+               <br>
+               <span class="footer-links">
+                  <a href="#">Hesgoal</a> ||
+                  <a href="#">TOTALSPORTEK</a> ||
+                  <a href="#">F1 STREAMS</a> ||
+                  <a href="#">SOCCER STREAM</a>
+               </span>
+            </p>
+            <p class="celsius">
+               © 2023 LiveSoccer.sx - LiveSoccer.la
+            </p>
+         </div>
+      </footer>
+   </div>
+
+
+
+   <!-- offcanvas chat -->
+   <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="chat_offcanvas">
+      <div class="offcanvas-header">
+         <h3 class="offcanvas-title" id="offcanvasLabel">Open Chat</h3>
+         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column">
+         <div class="mt-auto py-2" id="all_messages">
+            <span class="message">No messages there.</span>
+         </div>
+         <form class="input-group align-self-end">
+            <input type="text" class="form-control" required placeholder="messages...">
+            <button type="submit" class="btn btn-dark">
+               <i class="fas fa-paper-plane"></i>
+            </button>
+         </form>
+      </div>
+   </div>
+
+   <!-- Links Modal -->
+   <div class="modal fade" id="linksModal" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+         <div class="modal-content bg-secondary-subtle">
+            <div class="modal-header border-bottom-0 pb-0">
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body pt-0">
+               <div class="d-flex flex-wrap gap-3">
+                  <a href="strem.html" class="fs-5 text-decoration-none fw-semibold me-3">
+                     Link 1 <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a href="strem.html" class="fs-5 text-decoration-none fw-semibold me-3">
+                     Link 2 <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a href="strem.html" class="fs-5 text-decoration-none fw-semibold me-3">
+                     Link 3 <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a href="strem.html" class="fs-5 text-decoration-none fw-semibold me-3">
+                     Link 4 <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a href="strem.html" class="fs-5 text-decoration-none fw-semibold me-3">
+                     Link 5 <i class="fa-solid fa-link"></i>
+                  </a>
+                  <a href="strem.html" class="fs-5 text-decoration-none fw-semibold me-3">
+                     Link 6 <i class="fa-solid fa-link"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="js/bootstrap.bundle.js"></script>
+   <script src="js/owl.carousel.js"></script>
+   <script src="js/myScript.js"></script>
+</body>
+
+</html>
